@@ -7,9 +7,9 @@ public class Main3Test
     @Test
     void test01()
     {
-        // TODO 3.3: Oprav test
+        // TODO 3.3: Oprav test - Hotovo
         assertEquals(
-                "vojta@uhk.cz",
+                "jiri.haviger@uhk.cz",
                 Main3.emailOfBestTeacher("KIKM",2024)
         );
     }

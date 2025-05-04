@@ -9,9 +9,9 @@ public class Main6Test
     @Test
     void test01()
     {
-        // TODO 6.2: Oprav test
+        // TODO 6.2: Oprav test - HOTOVO
         assertEquals(
-                123,
+                244417,
                 Main6.idOfBestTeacher("KIKM",2024)
         );
     }
