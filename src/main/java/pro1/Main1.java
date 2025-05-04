@@ -13,6 +13,11 @@ public class Main1 {
         String json = Api.getActionsByDepartment(department,year);
         ActionsList actions= new Gson().fromJson(json, ActionsList.class);
 
-        return -1; // TODO 1.1: Vrať počet akcí, které mají 0 přihlášených studentů
+        if (actions == null) return 0;
+
+        // TODO 1.1: Vrat počet akcí, které mají 0 přihlášených studentů - Hotovo
+        return actions.items.stream()
+                .filter(action -> action.personsCount == 0)
+                .count();
     }
 }

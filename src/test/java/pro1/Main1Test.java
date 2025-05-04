@@ -6,9 +6,9 @@ public class Main1Test
     @Test
     void test01()
     {
-        // TODO 1.2: Oprav test
+        // TODO 1.2: Oprav test - hotovo
         assertEquals(
-                0,
+                95,
                 Main1.emptyActionsCount("KIKM",2024)
         );
     }
